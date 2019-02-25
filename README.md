@@ -7,3 +7,6 @@ We have two spring proflies:
 * gcp
 
 There are also two manifest files as auto reconfiguration needs to be disabled when utilising google cloud sql bound services.
+
+* manifest-aws.yml
+* manifest-gcp.yml
