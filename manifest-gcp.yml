@@ -1,0 +1,11 @@
+---
+applications:
+- name: cloud-native-mysql
+  memory: 1G
+  path: ./target/cloud-native-mysql-0.0.1-SNAPSHOT.jar
+  instances: 1
+  env:
+    JBP_CONFIG_SPRING_AUTO_RECONFIGURATION: '[enabled: false]'
+    SPRING_PROFILES_ACTIVE: gcp
+  services:
+    - gcp-mysql
